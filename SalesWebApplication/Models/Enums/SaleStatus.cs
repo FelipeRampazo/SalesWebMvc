@@ -7,7 +7,7 @@ namespace SalesWebApplication.Models.Enums
 {
     public enum SaleStatus : int
     {
-        Peding,
+        Pending,
         Billed,
         Canceled,
 
