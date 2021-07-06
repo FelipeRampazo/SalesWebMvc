@@ -69,7 +69,7 @@ namespace SalesWebApplication.Controllers
                 await _sellerService.RevomeAsync(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch (IntegrityException e)
+            catch (IntegrityException)
             {
                 return RedirectToAction(nameof(Error), new { message = "can't delete seller beacuse he/she has sales"});
             }
